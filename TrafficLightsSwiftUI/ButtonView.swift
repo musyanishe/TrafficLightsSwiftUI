@@ -8,8 +8,23 @@
 import SwiftUI
 
 struct ButtonView: View {
+    
+//    @State private func nextSignal() {
+//        if
+//    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button(action: {}){
+            Text("Start")
+                .font(.title)
+                .padding()
+                .foregroundColor(.white)
+                .background(
+                RoundedRectangle(cornerRadius: 15)
+                    .stroke(Color.white, lineWidth: 2)
+                    .background(Color.blue.cornerRadius(15)))
+        }
+
     }
 }
 

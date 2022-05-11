@@ -12,12 +12,16 @@ struct ContentView: View {
         ZStack{
             Color.black
                 .ignoresSafeArea()
+                
             VStack{
                 ColorCircleView(color: .red)
                 ColorCircleView(color: .yellow)
                 ColorCircleView(color: .green)
+                Spacer()
+                ButtonView()
             }.padding()
         }
+        .preferredColorScheme(.dark)
     }
 }
 
