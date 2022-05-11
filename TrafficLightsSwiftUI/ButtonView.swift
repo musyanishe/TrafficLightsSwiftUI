@@ -10,7 +10,7 @@ import SwiftUI
 struct ButtonView: View {
     
 //    @State private func nextSignal() {
-//        if
+//        
 //    }
     
     var body: some View {
@@ -24,8 +24,11 @@ struct ButtonView: View {
                     .stroke(Color.white, lineWidth: 2)
                     .background(Color.blue.cornerRadius(15)))
         }
-
     }
+    
+//    private func startButton() {
+//        switch 
+//    }
 }
 
 struct ButtonView_Previews: PreviewProvider {

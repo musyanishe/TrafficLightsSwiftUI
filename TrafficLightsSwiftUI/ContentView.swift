@@ -13,13 +13,14 @@ struct ContentView: View {
             Color.black
                 .ignoresSafeArea()
                 
-            VStack{
+            VStack(spacing: 10) {
                 ColorCircleView(color: .red.opacity(1))
                 ColorCircleView(color: .yellow.opacity(0.3))
                 ColorCircleView(color: .green.opacity(0.3))
                 Spacer()
                 ButtonView()
             }.padding()
+                .preferredColorScheme(.dark)
         }
     }
 }
