@@ -26,9 +26,6 @@ struct ButtonView: View {
                     .background(Color.blue.cornerRadius(15)))
         }
     }
-    
-
-
 }
 
 struct ButtonView_Previews: PreviewProvider {
