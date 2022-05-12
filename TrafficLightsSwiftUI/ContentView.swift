@@ -8,15 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
         ZStack{
             Color.black
                 .ignoresSafeArea()
                 
             VStack(spacing: 10) {
-                ColorCircleView(color: .red.opacity(1))
-                ColorCircleView(color: .yellow.opacity(0.3))
-                ColorCircleView(color: .green.opacity(0.3))
+                ColorCircleView(color: .red)
+                ColorCircleView(color: .yellow)
+                ColorCircleView(color: .green)
                 Spacer()
                 ButtonView()
             }.padding()

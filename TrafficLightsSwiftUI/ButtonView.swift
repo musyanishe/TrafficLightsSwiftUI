@@ -9,13 +9,14 @@ import SwiftUI
 
 struct ButtonView: View {
     
-//    @State private func nextSignal() {
-//        
-//    }
-    
+    let buttonTitle: String
+    let action: () -> ()
+        
     var body: some View {
-        Button(action: {}){
-            Text("Start")
+        Button {
+            action()
+        } label: {
+            Text(buttonTitle)
                 .font(.title)
                 .padding()
                 .foregroundColor(.white)
@@ -26,13 +27,12 @@ struct ButtonView: View {
         }
     }
     
-//    private func startButton() {
-//        switch 
-//    }
+
+
 }
 
 struct ButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonView()
+        ButtonView(buttonTitle: "Start", action: {})
     }
 }
